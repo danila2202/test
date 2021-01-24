@@ -1,0 +1,224 @@
+/**********************************************************/
+/* Этот файл обеспечивает работоспособность шаблона 			*/
+/* Лучше не лезть сюда ручками и ничего не менять здесь 	*/
+/* Для ваших стилей есть файл style.css 									*/
+/**********************************************************/
+
+
+body{
+  margin: 0;
+	padding-top: 85px;
+  font-family: 'Arial', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 40px;
+  position: relative;
+  text-align:left;
+}
+h2:after{
+  content: ' ';
+  display: block;
+  position: absolute;
+  
+  height: 3px;
+  background-color: #E22122;
+  top: 50px;
+  left: 0;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+
+h4{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+p{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+section{
+  padding: 50px 0;
+	position: relative;
+}
+
+.mainheader{
+  position:relative;
+  background-color:#C2DFFF;
+  padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.container{
+  width: 900px;
+  margin: auto;
+}
+
+
+
+.mainheader>.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.mainnav>ul{
+	display: flex;
+	list-style: none;
+	width: 770px;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+}
+.mainnav>ul li a{
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+	text-decoration: none;
+}
+.mainnav>ul li a:hover{
+	text-decoration: underline;
+}
+.mainnav>ul li.active a{
+	text-decoration: underline;
+	color: grey;
+}
+
+.mainnav>ul li img{
+	vertical-align: middle;
+}
+
+
+
+
+.kit_slides_wrapper{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+.prev,.next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{ 
+	background-color:#1C1C1C;
+}
+
+.dot {
+	cursor: pointer;
+	height: 12px;
+	width: 12px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+
+.active, .dot:hover{
+	background-color: #717171;
+}
+
+input[type="text"]{
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 10px 15px;
+	font-size: 16px;
+	width: 360px;
+	margin-bottom: 15px;
+	display: block;
+}
+label{
+	font-size: 16px;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 5px;
+}
+button{
+	background-color: #facc0e;
+	font-size: 16px;
+	font-weight: 700;
+	width: 360px;
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+
+#order-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#order-alert{
+	display: none;
+	width: 500px;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 25px;
+}
+
+#order-alert p{
+	margin: 0;
+}
+
+
+.goods-wrapper{
+	display: flex;
+	align-content: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.product{
+	width: 250px;
+	padding: 15px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+}
+.product>img{
+	width: 220px;
+}
+.product>h4{
+	margin: 9px 0 0 0;
+	float: left;
+}
+.product>button{
+	width: auto;
+	padding: 9px;
+	float: right;
+}

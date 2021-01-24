@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!--Стартовые стили шаблона-->
+  <link rel="stylesheet" href="css/starter.css">
+  <!--Ваши стили-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id ="page-preloader" class="preloader">
+		<div class="loader"><img src="img/preloader.png" id="sample"></div>
+	</div>
+	<!--НАЧАЛО Шапка-->
+  <header class="mainheader">
+    <div class="container">
+     
+      <img src="img/computeruniverse/cu.png" class="cu">
+      
+      <nav class="mainnav">
+      	<ul>
+      		<li><a href="#">Лучшие предложения</a></li>
+      		<li><a href="#2">О компании</a></li>
+      		<li><a href="#3">Оставить заявку</a></li>
+      		<li><a href="#4">Популярные товары</a></li>
+      		<li><img src="img/cart25.png"><a id="clicks">0</a></li>
+      	</ul>
+	  </nav> 
+	</div>
+    <div class="progress-bar" id="myBar"></div>
+  </header>
+	<!--КОНЕЦ Шапка-->
+	<div class="progress-container">
+		<div class="progress-bar" id="myBar"></div>
+	</div>
+
+  <main>
+	<div class="scroll-up"><img src="img/scrollUp.png" styke="width:40px", height="40px"></div>
+
+    <div class="container">
+      <!--НАЧАЛО Секция "Серии наборов"-->
+      <section>
+        <h2>Лучшие предложения</h2>
+		<!--Стрелки для листания слайдера-->
+        <!--НАЧАЛО Обертка для слайдов-->
+        <div class="kit_slides_wrapper">
+          <!-- НАЧАЛО Слайд №1-->
+        	<div class="item">
+        	  <img src="img/slide/nvidia.jpeg" style="width:100%", height="100%" alt="">
+        	</div>
+		  <!-- КОНЕЦ Слайд №1-->
+
+		  <!-- НАЧАЛО Слайд №2-->
+		  <div class="item">
+			<img src="img/slide/monitor.png" style="width:100%", height="100%" alt="">
+		  </div>
+		  <!-- КОНЕЦ Слайд №2-->
+
+		  <!-- НАЧАЛО Слайд №3-->
+		  <div class="item">
+			<img src="img/slide/samsung.png" style="width:100%", height="100%" alt="">
+		  </div>
+		  <!-- КОНЕЦ Слайд №3-->
+
+		  <!-- НАЧАЛО Слайд №4-->
+		  <div class="item">
+			<img src="img/slide/asus.png" style="width:100%", height="100%" alt="">
+		  </div>
+		  <!-- КОНЕЦ Слайд №4-->
+
+		  <!-- НАЧАЛО Слайд №5-->
+		  <div class="item">
+			<img src="img/slide/fitness.png" style="width:100%", height="100%" alt="">
+		  </div>
+		  <!-- КОНЕЦ Слайд №5-->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095</a>
+		</div>
+		<br>
+		<div style="text-align: center;">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		<!--КОНЕЦ Обертка для слайдов-->
+		<a name="2"></a>
+      </section>
+      <!--КОНЕЦ Секция "Серии наборов"-->
+      
+      
+      <!--НАЧАЛО Секция "О компании"-->
+      <section>
+      	<h2>О компании</h2>
+      	
+      	<p>
+      		<strong>„Лучший выбор. Лучший сервис.“  </strong>С 1999 года постоянно развивающаяся компания computeruniverse следует этому принципу, что сделало ее одним из ведующих онлайн-магазинов электронной техники. Установленные нами стандарты в отрасли это постоянное соответствие требованиям клиента. Мы являемся надежным партнером для каждого - будь то новичок или профессионал. Это подтверждает постоянный анализ положительных отзывов с таких порталов как «Geizhals» или «Facebook».
+      	</p>
+      	<p>
+			Нам важна не только удовлетворенность клиента, но и безопасность его покупок у нас. Поэтому мы регулярно поручаем независимым организациям проведение проверок на безопасность в нашем магазине. Чтобы постоянно соответствовать требованиям наших клиентов, мы придаем огромное значение стандартам качества и безопасности как на Вэбсайте, так и во внутренних процессах онлайн-магазина. Эти стандарты обеспечиваются строгими и регулярными проверками независимых внешних институтов, таких как TrustedShops, EHI. К тому же, как член TrustedShops, наш клиент получает бесплатное право на защиту прав потребителей.
+		  </p>
+		  <a name="3"></a>
+      </section>
+      <!--КОНЕЦ Секция "О компании"-->
+      <!--НАЧАЛО Секция "Оставить заявку"-->
+      <section>
+      	<h2>Оставить заявку</h2>
+      	
+		  <!--НАЧАЛО Обертка/флекс-контейнер-->
+		
+      	<div id="order-wrapper">
+      	  <!--НАЧАЛО Левая часть с полями для ввода-->
+      		<div class="order-form">
+				<form action="send.php" method="post">
+      			<!--Имя-->
+      			<label for="firstname_field">Имя</label>
+      			<input type="text" id="firstname_field" name="fname"> 
+      			<!--Фамилия-->
+      			<label for="lastname_field">Фамилия</label>
+      			<input type="text" id="lastname_field" name="lname">
+      			<!--Номер телефона-->     	
+      			<label for="phone_field">Номер телефона</label>
+      			<input type="text" id="phone_field" name="number">
+				  <button onclick="viewDiv();inputText()">Отправить</button>
+				</form>
+      		</div>
+      	  <!--КОНЕЦ Левая часть с полями для ввода-->
+      	  
+      	  <!--НАЧАЛО Правая часть с сообщением-->
+      		<div id="order-alert">
+
+				   <strong><p id="name"></p></strong>
+      				<p>Наши специалисты уже получили Вашу заявку и свяжутся с Вами в ближайшее время по телефону</p><strong><p id="number"></p></strong>
+      				<p>Спасибо за обращение! 
+      			    </p>
+      		</div>      	  
+      		<!--КОНЕЦ Правая часть с сообщением-->
+      	</div>
+		  <!--КОНЕЦ Обертка/флекс-контейнер-->
+		  <a name="4"></a>
+      </section>
+      <!--КОНЕЦ Секция "Оставить заявку"-->
+      
+      
+      <!--НАЧАЛО Секция "Собери комплект"-->
+      <section>
+      	<h2>Популярные товары</h2>
+      	
+      	<!--НАЧАЛО Обертка/флекс-контейнер для товаров-->
+      	<div id="products" class="goods-wrapper">
+      	
+      		<!--НАЧАЛО Товар №1-->
+      		<div class="product">
+      			<img src="img/goods/camera.png">
+      			<h4>Sony Alpha7 III + 28-70mm F3.5-5.6 OSS</h4>
+      			<button  class="btn" data-toggle="modal-1" onclick="countClicks()"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №1-->
+      		<!--НАЧАЛО Товар №2-->
+      		<div class="product">
+      			<img src="img/goods/s21_ultra.png">
+      			<h4>Samsung Galaxy S21 Ultra Phantom Black</h4>
+      			<button onclick="countClicks()"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №2-->
+      		<!--НАЧАЛО Товар №3-->
+      		<div class="product">
+				  <br>
+				  <br>
+				  <br>
+				  <img src="img/goods/amd.png">
+				  <br>
+				  <br>
+      			<h4>AMD Ryzen 5 5600X, SocketAM4, OEM</h4>
+      			<button onclick="countClicks()"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №3-->
+      		
+      		<!--НАЧАЛО Товар №4-->
+      		<div class="product">
+      			<img src="img/goods/nespresso.png">
+      			<h4>DeLonghi Nespresso ENV120.W</h4>
+      			<button onclick="countClicks()"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №4-->
+      		<!--НАЧАЛО Товар №5-->
+      		<div class="product">
+      			<img src="img/goods/iphone.png">
+      			<h4> Apple iPhone 12 Pro 128GB Graphite</h4>
+      			<button onclick="countClicks()"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №5-->
+      		<!--НАЧАЛО Товар №6-->
+      		<div class="product">
+      			<img src="img/goods/playstation.jpg">
+				  <h4>Sony PlayStation 5</h4>
+				  <br>
+				  <br>
+				  <br>
+      			<button onclick="countClicks()"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №6-->
+      	</div>
+      	<!--КОНЕЦ Обертка/флекс-контейнер для товаров-->
+      </section>
+      <!--КОНЕЦ Секция "Собери комплект"-->
+      
+    </div>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>

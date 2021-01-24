@@ -1,0 +1,56 @@
+/* Здесь пишем свои стили */
+.mainnav>cu{
+    width: 299px;
+    height: 48px;
+    margin-left: 0px;
+}
+html {
+    scroll-behavior: smooth; 
+}
+
+  .scroll-up{
+      position: fixed;
+      right: 30px;
+      bottom: 45px;
+      cursor: pointer;
+      opacity: 0;
+      transition: 0.2s;
+      transform: translateY(25px);
+  }
+
+  .scroll-up--active{
+      opacity: 1;
+      transform: translateY(0);
+  }
+ 
+  .progress-bar {
+    position:absolute; 
+	bottom:0;
+    height: 8px;
+    background: #7B68EE;
+    width: 0%;
+  }
+
+.preloader{
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#C2DFFF;
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+
+}
+.loader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.done{
+    opacity: 0;
+    visibility: hidden;
+}
